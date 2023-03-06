@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        defer></script>
+
+</head>
+
+<body>
+
+    <div class="navEle">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Calculator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <br>
+    <div class="container">
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-prev class="previousOperand"></div>
+                <!-- <input type="text" data-cur class="currentOperand"/> -->
+                <div data-cur class="currentOperand" contenteditable="true"></div>
+            </div>
+            <button data-AC class="span-two">AC</button>
+            <button data-del>DEL</button>
+            <button data-op>÷</button>
+            <button data-num>1</button>
+            <button data-num>2</button>
+            <button data-num>3</button>
+            <button data-op="">*</button>
+            <button data-num>4</button>
+            <button data-num>5</button>
+            <button data-num>6</button>
+            <button data-op>+</button>
+            <button data-num>7</button>
+            <button data-num>8</button>
+            <button data-num>9</button>
+            <button data-op>-</button>
+            <button data-num>.</button>
+            <button data-num>0</button>
+            <button data-equal class="span-two">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
