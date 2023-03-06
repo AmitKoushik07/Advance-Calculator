@@ -1,39 +1,44 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: Gotham Rounden,sans-serif;
+    font-family: Gotham Rounden, sans-serif;
     font-weight: normal;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #00AAFF,#00FF6C);
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
-.navbar{
-    background-color: none;
-}
-.calculator-grid{
+
+.calculator-grid {
     display: grid;
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
-.calculator-grid button{
+
+.calculator-grid button {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid white;
     background-color: rgba(255, 255, 255, .75);
     outline: none;
 }
-.calculator-grid  button:hover{
-    background-color: rgba(255, 255, 255, .9);;
+
+.calculator-grid button:hover {
+    background-color: rgba(255, 255, 255, .9);
+    ;
 }
-.span-two{
+
+.span-two {
     grid-column: span 2;
 }
-.output{
+
+.output {
     grid-column: 1/-1;
     background-color: rgba(0, 0, 0, .75);
     display: flex;
@@ -45,16 +50,29 @@ body{
     word-break: break-all;
 
 }
-.output .previousOperand{
+
+.output .previousOperand {
     color: rgba(255, 255, 255, .75);
     font-size: 1.5rem;
 }
-.output .currentOperand{
+.output .currentOperand {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
 }
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
+@media (max-width: 600px) {
+    .calculator-grid {
+        margin: 0 auto;
+        max-width: 600px;
     }
+    .calculator-grid button {
+        font-size: 1.8rem;
+    }
+    .calculator-grid {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
 }
