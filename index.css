@@ -6,6 +6,7 @@
     font-weight: normal;
 }
 
+
 body {
     padding: 0;
     margin: 0;
@@ -50,7 +51,6 @@ body {
     word-break: break-all;
 
 }
-
 .output .previousOperand {
     color: rgba(255, 255, 255, .75);
     font-size: 1.5rem;
@@ -74,5 +74,4 @@ body {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
-
 }
