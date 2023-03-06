@@ -53,3 +53,8 @@ body{
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
 }
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
